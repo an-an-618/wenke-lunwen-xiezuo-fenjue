@@ -1,0 +1,45 @@
+---
+name: wenke-lunwen-xiezuo-fenjue
+description: Use when writing, revising, reviewing, or packaging Chinese humanities papers, especially Chinese literature papers, with primary-text analysis, CNKI or library research, Zotero source management, Word DOCX delivery, APA or other citation styles, literature review, citation audit, and multi-role scholarly revision.
+---
+
+# 文科论文写作焚诀
+
+这套 Skill 用于把智能体写文科论文的过程从“生成文章”提升为“证据链工程”：先读原文和研究文献，再形成问题意识、学术史位置、论证结构和可核验引用，最后用审稿人与修订者的角色循环完成论文。
+
+## 总流程
+
+1. **界定任务**：确认题目、学科、目标级别、字数、引用格式、必须使用的数据库、最终交付物。若用户要求 C 刊标准、课程论文、开题报告或投稿稿，按相应强度执行。
+2. **建立材料库**：优先收集原典、作品原文、权威版本、作者访谈、研究论文。使用 Zotero 时，新建或选定 collection，保存题录、PDF、网页快照或可检索元数据。
+3. **做文献综述**：逐篇阅读可引用文献，提取论点、方法、关键词、证据范围和局限，不把未读资料写成参考依据。
+4. **提出中心问题**：把论文压缩到一个可论证的问题，而不是堆叠主题。明确“已有研究说了什么”“本文补充什么”“文本分析如何证明”。
+5. **设计有机结构**：少用碎标题。每一节必须承担一个论证推进功能，并能横向比较、纵向文学史定位、回到文本细读。
+6. **起草正文**：区分原文事实、二手文献观点、自己的推论。所有“某某认为”必须能在文献中找到对应依据。
+7. **多角色审修**：至少经过“论文撰写者-严苛审稿人-作者回应者-修订者-引文核验员-格式审校员”的循环。
+8. **交付与核验**：生成 DOCX 时检查页头、标题样式、表格、字数、引用格式、参考文献与正文一致性。无法渲染预览时必须说明原因。
+
+## 何时读取参考文件
+
+- 写完整论文、开题报告、文献综述：读取 `references/workflow.md`。
+- 用户要求“不要幻觉”“引用必须对得上原文”“逐条核验”：读取 `references/citation-audit.md`。
+- 用户要求 C 刊标准审查、教授批评、作者回应、重写：读取 `references/role-protocol.md`。
+- 任务涉及 Zotero、Word、APA、MLA、Chicago、GB/T 7714：读取 `references/zotero-word.md`。
+- 需要标题、小标题、摘要、引言、结语、审稿意见模板：读取 `references/templates.md`。
+
+## 硬性规则
+
+- 未读过全文或可核验证据的文献，不得作为“某某指出”的依据。
+- 引用观点必须能回到原文、页码、段落、截图、摘录或本地 evidence 文件。
+- 正文引用不能只堆在文末参考文献；按用户要求使用 APA、MLA、Chicago、GB/T 7714 等文内引用或脚注体系。
+- 原典文本分析必须是论文主体，不得让理论概念或文献综述替代细读。
+- 不要用图表装饰文科论文，除非用户明确要求或学科规范必须如此。
+- 小标题以论证推进为准，宁少勿碎；每节内部要自成系统。
+- 不得为了显得丰富而扩大中心。先抓住一个主问题，再围绕它建立纵向谱系和横向比较。
+- 生成 DOCX 后必须做结构体检；若用户指定格式要求，如“无页头”“标题不标蓝”“不用表格”，要逐项检查。
+
+## 推荐脚本
+
+- `scripts/docx_basic_qa.py <file.docx>`：检查 Word 文档字数、表格、页头、蓝色文字等基础格式风险。
+- `scripts/citation_skeleton.py <file.docx> --out audit.md`：从正文抽取疑似文内引用，生成引文核验清单骨架。
+
+脚本只能辅助发现问题，不能替代阅读文献。引用真实性最终以人工或智能体逐条对照原文证据为准。

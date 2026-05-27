@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="文科论文写作焚诀">
+  <rect width="512" height="512" rx="96" fill="#7A1F1F"/>
+  <path d="M142 116h228c18 0 32 14 32 32v236c0 18-14 32-32 32H142c-18 0-32-14-32-32V148c0-18 14-32 32-32Z" fill="#F7EFE2"/>
+  <path d="M162 170h188M162 222h188M162 274h142M162 326h104" stroke="#7A1F1F" stroke-width="22" stroke-linecap="round"/>
+  <path d="M337 324c36-42 43-80 22-114 45 28 66 72 49 121-14 40-51 65-92 70 18-20 24-45 21-77Z" fill="#D8A24A"/>
+  <path d="M291 390c23-28 28-54 16-79 31 20 45 49 34 82-9 26-33 42-63 46 12-14 16-31 13-49Z" fill="#B8322A"/>
+</svg>
